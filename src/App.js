@@ -6,7 +6,7 @@ import Popup from "./component/Popup"
 
 function App() {
 
-  const APIKEY="http://www.omdbapi.com/?apikey=6a3c33da"
+  const APIKEY=process.env.REACT_APP_KEY
   const [state,setState]=useState({
     s:"",
     results:[],
